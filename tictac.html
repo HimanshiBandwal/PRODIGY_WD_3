@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tictac.css">
+</head>
+<body>
+    <h1>Let's Play TIC-TAC-TOE</h1>
+    <div class="turn-indicator" id="turnIndicator">X's Turn</div>
+    <div class="container" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div class="controls">
+        <button class="reset-button" id="resetButton">Reset</button>
+        <div class="scoreboard-container">
+            <div class="scoreboard-title">SCOREBOARD</div>
+            <div class="scoreboard" id="scoreboard">
+                <div class="x-score">X: 0</div>
+                <div class="o-score">O: 0</div>
+            </div>
+        </div>
+    </div>
+    <div id="winnerModal" class="modal">
+        <div class="modal-content" id="winnerMessage"></div>
+    </div>
+    <script src="tictac.js"></script>
+</body>
+</html>
